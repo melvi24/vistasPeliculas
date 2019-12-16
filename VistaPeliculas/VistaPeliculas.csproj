@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ClasesPeliculas\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\MyPage.cs" />
+    <Compile Remove="Views\MyPage.xaml.cs" />
+    <Compile Remove="Views\Inicio.xaml.cs" />
+    <Compile Remove="Views\MyListViewListado.xaml.cs" />
+    <Compile Remove="Peliculas.cs" />
+    <Compile Remove="ListadoPeliculas.xaml.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
+    <Compile Remove="ClasesPeliculas\EmptyClass.cs" />
+    <Compile Remove="Views\detallesPeliculas.xaml.cs" />
+    <Compile Remove="Views\detallesPeliculasDetail.xaml.cs" />
+    <Compile Remove="Views\detallesPeliculasMaster.xaml.cs" />
+    <Compile Remove="Views\detallesPeliculasMenuItem.cs" />
+    <Compile Remove="Views\DetallesPeliculas.xaml.cs" />
+    <Compile Remove="ClasesPeliculas\Peliculas.cs" />
+    <Compile Remove="ViewModel\EmptyClass.cs" />
+    <Compile Remove="ViewModel\About.xaml.cs" />
+    <Compile Remove="Views\peliculasMVVM.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\MyPage.xaml" />
+    <EmbeddedResource Remove="Views\Inicio.xaml" />
+    <EmbeddedResource Remove="Views\MyListViewListado.xaml" />
+    <EmbeddedResource Remove="ListadoPeliculas.xaml" />
+    <EmbeddedResource Remove="MainPage.xaml" />
+    <EmbeddedResource Remove="Views\detallesPeliculas.xaml" />
+    <EmbeddedResource Remove="Views\detallesPeliculasDetail.xaml" />
+    <EmbeddedResource Remove="Views\detallesPeliculasMaster.xaml" />
+    <EmbeddedResource Remove="Views\DetallesPeliculas.xaml" />
+    <EmbeddedResource Remove="Views\detallesPeliculas.xaml" />
+    <EmbeddedResource Remove="ViewModel\About.xaml" />
+    <EmbeddedResource Remove="Views\peliculasMVVM.xaml" />
+    <EmbeddedResource Remove="Views\PeliculasMVVM.xaml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VistaPeliculas.Views.About">
+    <ContentPage.Content>
+
+         <StackLayout>
+            <Label Text="Acerca de la aplicación" FontSize="Medium" TextColor="Green"/>
+            <Label Text="Esta es una aplicación la cual podras ver y disfrutar los mejores géneros de peliculas."  TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

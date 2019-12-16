@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VistaPeliculas.Views.Home">
+    <ContentPage.Content>
+       
+  <StackLayout>
+      <!--Orientation="Vertical"
+     HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand">-->
+
+                <Label Text="Home"/>
+              
+      <Image Source="imagenFondo.jpg"/>
+      <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+     <Button x:Name="navPeliculasFavoritasBtn"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    Text="Peliculas Favoritas"
+                    HorizontalOptions="FillAndExpand"/>
+
+     <Button x:Name="navPeliculasMvvcBtn"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    Text="Peliculas MVVC"/>
+                    <!--HorizontalOptions="FillAndExpand"/>-->
+
+      <Button x:Name="navBtn"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    Text="Acerca de"/>
+          <!--HorizontalOptions="FillAndExpand"/>-->
+          </Grid>
+ </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

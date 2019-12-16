@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VistaPeliculas.Views.Home">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+
+  <Label Text="Pagina Principal" FontSize="Large" TextColor="Green"/>
+
+
+            <Button x:Name="ListaPeliculasBtn"
+            BackgroundColor="Brown"
+                    TextColor="White"
+                    Text="Peliculas Favoritas"
+                    HorizontalOptions="FillAndExpand"/>
+
+
+            <Button x:Name="peliculasMVVCBtn"
+            BackgroundColor="Brown"
+                    TextColor="White"
+                    Text="Peliculas MVVM"
+                    HorizontalOptions="FillAndExpand"/>
+
+
+            <Button x:Name="navBtn"
+            BackgroundColor="Brown"
+                    TextColor="White"
+                    Text="Acerca de"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="By Melvi Contreras" FontSize="Micro" FontAttributes="Italic" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+      
+    </ContentPage.Content>
+</ContentPage>
